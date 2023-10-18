@@ -8,9 +8,14 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "cs": "config-sync"
+    "cs": "config-sync",
+    "test": "jest --forceExit --detectOpenHandles"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "sqlite3": "^5.1.6",
+    "supertest": "^6.3.3"
+  },
   "dependencies": {
     "@strapi/plugin-i18n": "4.14.4",
     "@strapi/plugin-users-permissions": "4.14.4",
